@@ -2,7 +2,17 @@ import "./layout1.css";
 
 const Layout1 = () => {
   return (
-    <div>
+    <div className="layout1-container">
+      <img
+        src="/layout1/bg-tablet-pattern.svg"
+        className="pill-bg pill-bg-top"
+        alt="tablet pattern"
+      />
+      <img
+        src="/layout1/bg-tablet-pattern.svg"
+        className="pill-bg pill-bg-mid"
+        alt="tablet pattern"
+      />
       <section className="topContainer">
         <nav className="navbar">
           <img src="/layout1/logo.svg" alt="logo" />
@@ -26,11 +36,7 @@ const Layout1 = () => {
           </div>
           <div className="hero-box2">
             <img
-              src="/layout1/bg-tablet-pattern.svg"
-              className="pill-bg-top"
-              alt="tablet pattern"
-            />
-            <img
+              className="hero-img"
               src="/layout1/illustration-intro.svg"
               alt="illustration introduction"
             />
@@ -45,7 +51,50 @@ const Layout1 = () => {
               teams.
             </p>
           </div>
-          <div className="midBox2"></div>
+          <div className="midBox2">
+            <ul>
+              <li>
+                <div>
+                  <span className="pill-number">01</span>
+                </div>
+                <div>
+                  <h3>Track company-wide progress</h3>
+                  <p>
+                    See how your day-to-day tasks fit into the wider vision. Go
+                    from tracking progress at the milestone level all the way
+                    done to the smallest of details. Never lose sight of the
+                    bigger picture again.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <span className="pill-number">02</span>
+                </div>
+                <div>
+                  <h3>Advanced built-in reports</h3>
+                  <p>
+                    Set internal delivery estimates and track progress toward
+                    company goals. Our customizable dashboard helps you build
+                    out the reports you need to keep key stakeholders informed.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <span className="pill-number">03</span>
+                </div>
+                <div>
+                  <h3>Everything you need in one place</h3>
+                  <p>
+                    Stop jumping from one service to another to communicate,
+                    store files, track tasks and share documents. Manage offers
+                    an all-in-one team productivity solution.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </div>
