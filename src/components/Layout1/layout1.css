@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
 
 :root {
-  --color-bg: #1e1e26;
-  --color-primary: #f3613c;
-  --color-primary-variant: #242e52;
-  --color-lighter: #fff;
-  --color-light: #fafafa;
-  --color-font-light: #a2a3a8;
+  --color-bright-red: hsl(12, 88%, 59%);
+  --color-dark-blue: hsl(228, 39%, 23%);
+  --color-dark-grayish-blue: hsl(227, 12%, 61%);
+  --color-very-dark-blue: hsl(233, 12%, 13%);
+  --color-very-pale-red: hsl(13, 100%, 96%);
+  --color-very-light-gray: hsl(0, 0%, 98%);
+  --container-desktop: 1440px;
+  --container-mobile: 375px;
   --container-width-lg: 75%;
   --container-width-md: 86%;
   --container-width-sm: 90%;
@@ -15,10 +17,29 @@
 
 * {
   font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 16px;
 }
 
+h1 {
+  font-size: 4rem;
+  color: var(--color-very-dark-blue);
+}
+
+h2 {
+  font-size: 3rem;
+  color: var(--color-very-dark-blue);
+}
+
+p {
+  font-size: 1rem;
+  color: var(--color-dark-grayish-blue);
+  line-height: 1.6;
+}
+
+/* === Navbar and Hero section === */
+
 .topContainer {
-  width: var(--container-width-lg);
+  width: var(--container-desktop);
   margin: 0 auto;
 }
 
@@ -26,20 +47,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: antiquewhite;
+  margin-top: 2rem;
 }
 
 .navbar img {
   display: block;
-}
-
-.navbar button {
-  display: block;
-  color: var(--color-lighter);
-  background-color: var(--color-primary);
-  border-radius: 10rem;
-  padding: 1rem;
-  font-size: 1rem;
 }
 
 .links {
@@ -47,3 +59,56 @@
   gap: 2rem;
   padding: 1rem 0;
 }
+
+.heroContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hero-box1 {
+  margin: 8rem 0;
+}
+
+.hero-box1 p {
+  padding: 2rem 0;
+  width: 50%;
+}
+
+.hero-box2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pill-bg-top {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* === Mid Section === */
+
+.midContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.midBox1 p {
+  padding: 2rem 0;
+  width: 50%;
+}
+
+/*=== Support Classes ===*/
+
+.btn-primary {
+  display: block;
+  color: var(--color-very-light-gray);
+  background-color: var(--color-bright-red);
+  border-radius: 10rem;
+  padding: 1rem 2rem;
+  font-weight: 700;
+}
+
+/* === Media Queries === */
