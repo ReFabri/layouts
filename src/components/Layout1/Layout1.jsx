@@ -3,17 +3,17 @@ import "./layout1.css";
 const Layout1 = () => {
   return (
     <div className="layout1-container">
-      <img
-        src="/layout1/bg-tablet-pattern.svg"
-        className="pill-bg pill-bg-top"
-        alt="tablet pattern"
-      />
-      <img
-        src="/layout1/bg-tablet-pattern.svg"
-        className="pill-bg pill-bg-mid"
-        alt="tablet pattern"
-      />
       <section className="topContainer">
+        <img
+          src="/layout1/bg-tablet-pattern.svg"
+          className="pill-bg pill-bg-top"
+          alt="tablet pattern"
+        />
+        <img
+          src="/layout1/bg-tablet-pattern.svg"
+          className="pill-bg pill-bg-mid"
+          alt="tablet pattern"
+        />
         <nav className="navbar">
           <img src="/layout1/logo.svg" alt="logo" />
           <ul className="links">

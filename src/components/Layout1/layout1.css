@@ -46,11 +46,8 @@ p {
 
 /* === Navbar and Hero section === */
 
-.layout1-container {
-  position: relative;
-}
-
 .topContainer {
+  position: relative;
   background-color: #fff;
   width: var(--container-desktop);
   margin: 0 auto;
@@ -160,13 +157,13 @@ p {
 }
 
 .pill-bg-top {
-  top: -10rem;
-  right: 4rem;
+  top: -12rem;
+  right: -10rem;
 }
 
 .pill-bg-mid {
-  top: 62rem;
-  right: 88rem;
+  top: 72rem;
+  right: 75rem;
 }
 
 /* === Media Queries === */
