@@ -23,7 +23,7 @@ const Layout1 = () => {
             <li>Careers</li>
             <li>Community</li>
           </ul>
-          <button className="btn-primary">Get Started</button>
+          <button className="btn btn-primary">Get Started</button>
         </nav>
         <div className="heroContainer">
           <div className="hero-box1">
@@ -32,7 +32,7 @@ const Layout1 = () => {
               Manage makes it simple for software teams to plan day-to-day tasks
               while keeping the larger team goals in view.
             </p>
-            <button className="btn-primary">Get Started</button>
+            <button className="btn btn-primary">Get Started</button>
           </div>
           <div className="hero-box2">
             <img
@@ -96,6 +96,16 @@ const Layout1 = () => {
             </ul>
           </div>
         </div>
+      </section>
+      <section className="bottomContainer">
+        <div className="carouselContainer"></div>
+        <div className="ctaContainer">
+          <h2>Simplify how your team works today.</h2>
+          <div className="ctaBtnContainer">
+            <button className="btn btn-secondary">Get Started</button>
+          </div>
+        </div>
+        <footer></footer>
       </section>
     </div>
   );
