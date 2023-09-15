@@ -145,8 +145,12 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
-  padding: 8rem 4rem;
+  padding: 4rem;
   background-color: var(--color-bright-red);
+  background-image: url("../../../public/layout1/bg-simplify-section-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 12rem;
 }
 
 .bottomContainer .ctaContainer h2 {
@@ -159,6 +163,13 @@ p {
   align-items: center;
   justify-content: end;
   padding-right: 8rem;
+}
+
+.footerContainer {
+  background-color: var(--color-very-dark-blue);
+  color: var(--color-very-light-gray);
+  display: grid;
+  grid-template-columns: 1fr 3fr 1.5fr;
 }
 
 /*=== Support Classes ===*/

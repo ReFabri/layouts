@@ -105,7 +105,21 @@ const Layout1 = () => {
             <button className="btn btn-secondary">Get Started</button>
           </div>
         </div>
-        <footer></footer>
+        <footer className="footerContainer">
+          <div>LOGO</div>
+          <div>
+            <ul>
+              <li>nav1</li>
+              <li>nav2</li>
+              <li>nav3</li>
+              <li>nav4</li>
+              <li>nav5</li>
+            </ul>
+          </div>
+          <div>
+            <button className="btn btn-primary">Get Started</button>
+          </div>
+        </footer>
       </section>
     </div>
   );
