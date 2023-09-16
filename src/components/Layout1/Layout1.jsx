@@ -23,7 +23,11 @@ const Layout1 = () => {
             <li>Careers</li>
             <li>Community</li>
           </ul>
-          <button className="btn btn-primary">Get Started</button>
+          <div className="burger-menu">
+            <img src="/layout1/icon-hamburger.svg" className="visible" alt="" />
+            <img src="/layout1/icon-close.svg" className="hidden" alt="" />
+          </div>
+          <button className="btn btn-primary btn-desktop">Get Started</button>
         </nav>
         <div className="heroContainer">
           <div className="hero-box1">
