@@ -31,6 +31,31 @@ const Layout2 = () => {
           <button className="button">Get Started</button>
         </div>
       </header>
+
+      <main>
+        <section>
+          <div className="container">
+            <div className="even-columns">
+              <div>
+                <h1 className="fs-primary-heading fw-bold">
+                  Bring everyone together to build better products.
+                </h1>
+                <p>
+                  Manage makes it simple for software teams to plan day-to-day
+                  tasks while keeping the larger team goals in view.
+                </p>
+                <button className="button">Get Started</button>
+              </div>
+              <div>
+                <img
+                  src="/layout1/illustration-intro.svg"
+                  alt="illustration introduction"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
     </>
   );
 };
