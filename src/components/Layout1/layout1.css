@@ -49,7 +49,7 @@ p {
 .topContainer {
   position: relative;
   background-color: #fff;
-  width: var(--container-desktop);
+  max-width: var(--container-desktop);
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -69,6 +69,10 @@ p {
   display: block;
 }
 
+.navbar .burger-menu {
+  display: none;
+}
+
 .links {
   display: flex;
   gap: 2rem;
@@ -78,7 +82,7 @@ p {
 .heroContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: var(--container-width-lg);
+  max-width: var(--container-width-lg);
 }
 
 .hero-box1 {
@@ -107,7 +111,7 @@ p {
   margin-top: 6rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: var(--container-width-lg);
+  max-width: var(--container-width-lg);
   z-index: 1;
 }
 
@@ -131,7 +135,7 @@ p {
 /* === Bottom Section === */
 
 .bottomContainer {
-  width: var(--container-desktop);
+  max-width: var(--container-desktop);
   background-color: #fff;
   margin: 0 auto;
 }
@@ -229,10 +233,32 @@ p {
 /* === Media Queries === */
 
 @media screen and (max-width: 600px) {
+  .navbar .burger-menu {
+    display: block;
+  }
+
   .btn-desktop {
     display: none;
   }
   .btn-mobile {
     display: block;
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: center;
+    width: 60vw;
+    gap: 2rem;
+    padding: 1rem 0;
+    position: absolute;
+    top: -50vh;
+    left: 20vw;
+    background-color: red;
+    transition: all 300ms ease;
+    z-index: 100;
+  }
+
+  .openLinks {
+    top: 20vh;
   }
 }

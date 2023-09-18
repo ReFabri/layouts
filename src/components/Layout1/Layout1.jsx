@@ -1,6 +1,9 @@
 import "./layout1.css";
+import { useState } from "react";
 
 const Layout1 = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="layout1-container">
       <section className="topContainer">
@@ -16,16 +19,24 @@ const Layout1 = () => {
         />
         <nav className="navbar">
           <img src="/layout1/logo.svg" alt="logo" />
-          <ul className="links">
+          <ul className={`links ${!isOpen && "openLinks"}`}>
             <li>Pricing</li>
             <li>Product</li>
             <li>About Us</li>
             <li>Careers</li>
             <li>Community</li>
           </ul>
-          <div className="burger-menu">
-            <img src="/layout1/icon-hamburger.svg" className="visible" alt="" />
-            <img src="/layout1/icon-close.svg" className="hidden" alt="" />
+          <div className="btn-mobile" onClick={() => setIsOpen(!isOpen)}>
+            <img
+              src="/layout1/icon-hamburger.svg"
+              className={`openMobileMenu ${isOpen ? "visible" : "hidden"}`}
+              alt="open navigation menu"
+            />
+            <img
+              src="/layout1/icon-close.svg"
+              className={`openMobileMenu ${!isOpen ? "visible" : "hidden"}`}
+              alt="close navigation menu"
+            />
           </div>
           <button className="btn btn-primary btn-desktop">Get Started</button>
         </nav>
