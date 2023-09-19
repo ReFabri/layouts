@@ -10,7 +10,7 @@ const Layout2 = () => {
             <img src="/layout1/logo.svg" alt="Manage Logo" />
           </Link>
           <nav className="primary-navigation">
-            <ul role="list" className="nav-list">
+            <ul role="list" aria-label="primary" className="nav-list">
               <li>
                 <Link to="#">Pricing</Link>
               </li>
@@ -129,6 +129,68 @@ const Layout2 = () => {
           </div>
         </section>
       </main>
+      <footer className="bg-neutral-900 text-neutral-100">
+        <div className="container">
+          <div className="even-columns">
+            <div>
+              <Link to="#">
+                <img src="/layout1/logo.svg" alt="Manage Logo" />
+              </Link>
+              <ul role="list" aria-label="social links">
+                <li>
+                  <Link to="#" aria-label="facebook"></Link>
+                </li>
+                <li>
+                  <Link to="#" aria-label="youtube"></Link>
+                </li>
+                <li>
+                  <Link to="#" aria-label="twitter"></Link>
+                </li>
+                <li>
+                  <Link to="#" aria-label="pinterest"></Link>
+                </li>
+                <li>
+                  <Link to="#" aria-label="instagram"></Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <nav className="footer-nav" aria-label="footer">
+                <ul role="list">
+                  <li>
+                    <Link to="#">Home</Link>
+                  </li>
+                  <li>
+                    <Link to="#">Pricing</Link>
+                  </li>
+                  <li>
+                    <Link to="#">Products</Link>
+                  </li>
+                  <li>
+                    <Link to="#">About Us</Link>
+                  </li>
+                  <li>
+                    <Link to="#">Careers</Link>
+                  </li>
+                  <li>
+                    <Link to="#">Community</Link>
+                  </li>
+                  <li>
+                    <Link to="#">Privacy Policy</Link>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div>
+              <form action="">
+                <input type="email" />
+                <button className="button">Go</button>
+              </form>
+              <p>Copyright 2020. All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </>
   );
 };
