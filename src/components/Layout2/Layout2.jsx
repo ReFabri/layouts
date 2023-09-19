@@ -107,6 +107,27 @@ const Layout2 = () => {
             </div>
           </div>
         </section>
+
+        <section className="carousel">
+          <h2 className="fs-secondary-heading">What they&apos;ve said</h2>
+          {/* Carousel */}
+          <button className="button">Get Started</button>
+        </section>
+
+        <section className="cta | bg-primary-400 text-neutral-100">
+          <div className="container">
+            <div className="even-columns">
+              <div>
+                <p className="fs-secondary-heading fw-bold"></p>
+              </div>
+              <div>
+                <button className="button" data-type="inverted">
+                  Get Started
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   );
