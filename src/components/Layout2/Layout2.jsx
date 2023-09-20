@@ -114,7 +114,7 @@ const Layout2 = () => {
           <button className="button">Get Started</button>
         </section>
 
-        <section className="cta | bg-primary-400 text-neutral-100">
+        <section className="cta | bg-accent-400 text-neutral-100">
           <div className="container">
             <div className="even-columns">
               <div>
