@@ -33,7 +33,7 @@ const Layout2 = () => {
       </header>
 
       <main>
-        <section>
+        <section className="padding-block-900">
           <div className="container">
             <div className="even-columns">
               <div>
@@ -55,7 +55,7 @@ const Layout2 = () => {
             </div>
           </div>
         </section>
-        <section>
+        <section className="padding-block-900">
           <div className="container">
             <div className="even-columns">
               <div>
@@ -108,13 +108,15 @@ const Layout2 = () => {
           </div>
         </section>
 
-        <section className="carousel">
-          <h2 className="fs-secondary-heading">What they&apos;ve said</h2>
+        <section className="carousel | padding-block-700">
+          <h2 className="fs-secondary-heading fw-bold">
+            What they&apos;ve said
+          </h2>
           {/* Carousel */}
           <button className="button">Get Started</button>
         </section>
 
-        <section className="cta | bg-accent-400 text-neutral-100">
+        <section className="cta | padding-block-700 bg-accent-400 text-neutral-100">
           <div className="container">
             <div className="even-columns">
               <div>
@@ -129,7 +131,7 @@ const Layout2 = () => {
           </div>
         </section>
       </main>
-      <footer className="bg-neutral-900 text-neutral-100">
+      <footer className="padding-block-700 bg-neutral-900 text-neutral-100">
         <div className="container">
           <div className="even-columns">
             <div>
